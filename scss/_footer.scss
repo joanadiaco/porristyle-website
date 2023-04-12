@@ -1,0 +1,73 @@
+footer{
+    background-color: white;
+    .contenedorPadreFooter{
+        margin: $margenPadre;
+        padding: $paddingPadre;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .logoFooter{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            animation-duration: 10s;
+            a{
+                align-self: center;
+                img{
+                    align-self: center;
+                }
+            }
+        }
+        .linksFooter{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .linksPorriStyle{
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                p{
+                    font-family: $fontFamily;
+                    font-size: 15px;
+                    color: $paragraphColor;
+                    text-align: center;
+                    padding: 10px;
+                    margin-bottom: 0;
+                    a{
+                        text-decoration: none;
+                        color: $paragraphColor;
+                    }
+                }
+                .buttonsNav{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    padding: 10px;
+                    a{
+                        color: $paragraphColor;
+                    }
+                }
+            }
+            .linksDeveloper{
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                p{
+                    font-family: $fontFamily;
+                    color: $paragraphColor;
+                    font-size: 15px;
+                    text-align: center;
+                    margin-bottom: 0;
+                    a{
+                        text-decoration: none;
+                        font-weight: 600;
+                        color: $paragraphColor;
+                    }
+                }
+            }
+        }
+    }
+}

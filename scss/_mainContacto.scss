@@ -1,0 +1,293 @@
+.mainContacto{
+    background-color: white;
+    .contactoGeneral{
+        background-color: $sectionCeleste100;
+        margin: 0;
+        .contactoGeneralContainer{
+            margin: 0px 20px 0px 20px;
+            padding: $paddingPadre;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+            h1{
+                margin: 40px 0px 20px 0px;
+                padding: $paddingPadre;
+                font-family: $fontFamily;
+                color: $titleColor;
+                font-weight: 600;
+                font-size: 48px;
+                font-style: normal;
+                text-align: center;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+            p{
+                margin: 20px 40px 30px 40px;
+                padding: $paddingPadre;
+                font-family: $fontFamily;
+                font-weight: 400;
+                font-size: 24px;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.53);
+            }
+        }
+    }
+    .contactoCliente{
+        background-color: $sectionCeleste80;
+        margin: 0;
+        .contactoContainer{
+            margin: 0px 20px 0px 20px;
+            padding: $paddingPadre;
+            .contactoContainerCard{
+                margin: 40px 130px 40px 130px;
+                padding: $paddingPadre;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-content: center;
+                background-color: white;
+                border-radius: 71px;
+                filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.2));
+                .contactoTitle{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 20px 50px 10px 50px;
+                    padding: $paddingPadre;
+                    // border: 2px solid green;
+                    h2{
+                        font-family: $fontFamily;
+                        color: $titleColor;
+                        font-weight: 600;
+                        font-size: 32px;
+                        text-align: center;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        // border: 1px solid black;
+                    }
+                }
+                .contactoDescr{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin: 10px 50px 20px 50px;
+                    padding: $paddingPadre;
+                    // border: 2px solid green;
+                    p{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        margin: 0px 30px 0px 0px;
+                        font-family: $fontFamily;
+                        color: $paragraphColor;
+                        font-weight: 400;
+                        font-size: 20px;
+                        text-align: left;
+                        // border: 1px solid black;
+                    }
+                    .contactoIcons{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        margin: 0px 0px 0px 30px;
+                        // border: 1px solid black;
+                        a{
+                            display: flex;
+                            flex-direction: row;
+                            font-family: $fontFamily;
+                            text-decoration: none;
+                            font-weight: 400;
+                            font-size: 20px;
+                            color: $paragraphColor;
+                            &:hover{
+                                font-weight: 600;
+                            }
+                            svg{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contactoRedes{
+        background-color: $sectionCeleste60;
+        margin: 0;
+        .contactoContainer{
+            margin: 0px 20px 0px 20px;
+            padding: $paddingPadre;
+            .contactoContainerCard{
+                margin: 40px 130px 40px 130px;
+                padding: $paddingPadre;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-content: center;
+                background-color: white;
+                border-radius: 71px;
+                filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.2));
+                .contactoTitle{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 20px 50px 10px 50px;
+                    padding: $paddingPadre;
+                    // border: 2px solid green;
+                    h2{
+                        font-family: $fontFamily;
+                        color: $titleColor;
+                        font-weight: 600;
+                        font-size: 32px;
+                        text-align: center;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        // border: 1px solid black;
+                    }
+                }
+                .contactoDescr{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin: 10px 50px 20px 50px;
+                    padding: $paddingPadre;
+                    // border: 2px solid green;
+                    p{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        margin: 0px 30px 0px 0px;
+                        font-family: $fontFamily;
+                        color: $paragraphColor;
+                        font-weight: 400;
+                        font-size: 20px;
+                        text-align: left;
+                        // border: 1px solid black;
+                    }
+                    .contactoIcons{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        margin: 0px 0px 0px 30px;
+                        // border: 1px solid black;
+                        a{
+                            display: flex;
+                            flex-direction: row;
+                            font-family: $fontFamily;
+                            text-decoration: none;
+                            font-weight: 400;
+                            font-size: 20px;
+                            color: $paragraphColor;
+                            &:hover{
+                                font-weight: 600;
+                            }
+                            svg{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contactoNewsletter{
+        background-color: $sectionCeleste40;
+        margin: 0;
+        .contactoContainer{
+            margin: 0px 20px 0px 20px;
+            padding: $paddingPadre;
+            .contactoContainerCard{
+                margin: 40px 130px 40px 130px;
+                padding: $paddingPadre;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-content: center;
+                background-color: white;
+                border-radius: 71px;
+                filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.2));
+                .contactoTitle{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 20px 50px 10px 50px;
+                    padding: $paddingPadre;
+                    // border: 2px solid green;
+                    h2{
+                        font-family: $fontFamily;
+                        color: $titleColor;
+                        font-weight: 600;
+                        font-size: 32px;
+                        text-align: center;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        // border: 1px solid black;
+                    }
+                }
+                .contactoDescr{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin: 10px 50px 20px 50px;
+                    padding: $paddingPadre;
+                    // border: 2px solid green;
+                    p{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: left;
+                        margin: 0px 10px 0px 0px;
+                        padding: 0px 70px 0px 0px;
+                        font-family: $fontFamily;
+                        color: $paragraphColor;
+                        font-weight: 400;
+                        font-size: 20px;
+                        text-align: left;
+                        // border: 1px solid black;
+                    }
+                    .newsletterInput{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: right;
+                        margin: 0px 0px 0px 10px;
+                        // padding: $paddingPadre;
+                        // border: 1px solid black;
+                        font-family: $fontFamily;
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-align: center;
+                        .input-group{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            width: max-content;
+                        }
+                    }
+                    /* .newsletterInput{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin: 0px 0px 0px 30px;
+                        border: 1px solid black;
+                        font-family: $fontFamily;
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-align: center;
+                        input{
+                            border-radius: 71px;
+                        }
+                        button{
+                            color: $buttonColor;
+                            border-radius: 71px;
+                            &:hover{
+                                font-weight: 600;
+                            }
+                        }
+                    } */
+                    /* .input-group{
+                        justify-content: center;
+                        margin: 0px 0px 0px 30px;
+                        border: 1px solid black;
+                    } */
+                }
+            }
+        }
+    }
+}

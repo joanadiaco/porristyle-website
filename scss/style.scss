@@ -1,0 +1,42 @@
+/*VARIABLES*/
+$fontFamily: 'Raleway', sans-serif; /*Fuente*/
+$titleColor: black; /*Color títulos*/
+$subtitleColor: #15ADCE; /*Color subtítulos h2*/
+$subSubtitleColor: black; /*Color subtítulos h3*/
+$paragraphColor: black; /*Color p*/
+$buttonColor: rgba(229, 209, 240, 1); /*Color botones*/
+$sectionLila100: rgba(240, 209, 239, 1); /*Lila al 100%*/
+$sectionLila80: rgba(240, 209, 239, 0.8); /*Lila al 80%*/
+$sectionLila60: rgba(240, 209, 239, 0.6); /*Lila al 60%*/
+$sectionLila40: rgba(240, 209, 239, 0.4); /*Lila al 40%*/
+$sectionLila20: rgba(240, 209, 239, 0.2); /*Lila al 20%*/
+$sectionCeleste100: rgba(212, 237, 242, 1); /*Celeste al 100%*/
+$sectionCeleste80: rgba(212, 237, 242, 0.8); /*Celeste al 80%*/
+$sectionCeleste60: rgba(212, 237, 242, 0.6); /*Celeste al 60%*/
+$sectionCeleste40: rgba(212, 237, 242, 0.4); /*Celeste al 40%*/
+$sectionCeleste20: rgba(212, 237, 242, 0.2); /*Celeste al 20%*/
+$margenPadre: 20px;
+$paddingPadre: 10px;
+
+
+@import "header";
+@import "mainIndex";
+@import "mainProductos";
+@import "mainPreguntas";
+@import "mainContacto";
+@import "footer";
+
+
+/*RESETEO CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*MÁRGENES BODY*/
+body{
+    /* margin: 10px;
+    padding: 10px; */
+    background-color: white;
+}

@@ -1,0 +1,1039 @@
+@charset "UTF-8";
+/*VARIABLES*/
+/*Fuente*/
+/*Color títulos*/
+/*Color subtítulos h2*/
+/*Color subtítulos h3*/
+/*Color p*/
+/*Color botones*/
+/*Lila al 100%*/
+/*Lila al 80%*/
+/*Lila al 60%*/
+/*Lila al 40%*/
+/*Lila al 20%*/
+/*Celeste al 100%*/
+/*Celeste al 80%*/
+/*Celeste al 60%*/
+/*Celeste al 40%*/
+/*Celeste al 20%*/
+header {
+  background-color: white; }
+  header .contenedorPadreHeader {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    header .contenedorPadreHeader a img {
+      width: 250px;
+      height: 250px; }
+    header .contenedorPadreHeader .navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      header .contenedorPadreHeader .navbar .collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+        header .contenedorPadreHeader .navbar .collapse .navbar-nav {
+          justify-content: space-around;
+          list-style-type: none; }
+          header .contenedorPadreHeader .navbar .collapse .navbar-nav .nav-item {
+            font-family: "Raleway", sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0px 60px 0px 60px; }
+            header .contenedorPadreHeader .navbar .collapse .navbar-nav .nav-item:hover {
+              font-weight: 600;
+              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.mainHome {
+  background-color: white; }
+  .mainHome .aboutMe {
+    background-color: #f0d1ef;
+    margin: 0; }
+    .mainHome .aboutMe .aboutMeContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px;
+      height: 100%;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 40px;
+      grid-template-areas: "imgGiaContainer descriptionGia";
+      justify-content: center;
+      align-content: stretch;
+      justify-items: stretch;
+      align-items: center; }
+      .mainHome .aboutMe .aboutMeContainer .imgGiaContainer {
+        padding: 20px;
+        grid-area: imgGiaContainer;
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        grid-template-areas: "imgBefore . ." "imgBefore imgAfter1 ." ". imgAfter1 imgAfter2" ". . imgAfter2";
+        justify-content: center;
+        align-content: stretch;
+        align-items: stretch; }
+        .mainHome .aboutMe .aboutMeContainer .imgGiaContainer .imgBefore {
+          grid-area: imgBefore;
+          justify-self: center; }
+          .mainHome .aboutMe .aboutMeContainer .imgGiaContainer .imgBefore img {
+            box-shadow: 0px 10px 340px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 27px; }
+        .mainHome .aboutMe .aboutMeContainer .imgGiaContainer .imgAfter1 {
+          grid-area: imgAfter1;
+          justify-self: center; }
+          .mainHome .aboutMe .aboutMeContainer .imgGiaContainer .imgAfter1 img {
+            box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 27px; }
+        .mainHome .aboutMe .aboutMeContainer .imgGiaContainer .imgAfter2 {
+          grid-area: imgAfter2;
+          justify-self: center; }
+          .mainHome .aboutMe .aboutMeContainer .imgGiaContainer .imgAfter2 img {
+            box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 27px; }
+      .mainHome .aboutMe .aboutMeContainer .descriptionGia {
+        height: 100%;
+        padding: 20px;
+        grid-area: descriptionGia;
+        align-content: center;
+        font-family: "Raleway", sans-serif;
+        text-align: center; }
+        .mainHome .aboutMe .aboutMeContainer .descriptionGia h2 {
+          color: black;
+          font-weight: 600;
+          letter-spacing: 7px;
+          margin: 10px 0px 40px 0px; }
+        .mainHome .aboutMe .aboutMeContainer .descriptionGia p {
+          font-size: 15px;
+          font-weight: 400;
+          color: black;
+          line-height: 30px;
+          margin: 20px 0px 20px 0px; }
+  .mainHome .previewProductos {
+    background-image: url(/Img/home_productos_cut.jpg);
+    background-size: cover; }
+    .mainHome .previewProductos .previewProductosContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: "Raleway", sans-serif; }
+      .mainHome .previewProductos .previewProductosContainer .descriptionProductosContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 150px 30px 50px 30px; }
+        .mainHome .previewProductos .previewProductosContainer .descriptionProductosContainer p {
+          margin: 5px 200px 5px 200px;
+          color: white;
+          font-size: 30px;
+          font-weight: 400;
+          text-transform: uppercase;
+          text-align: center;
+          letter-spacing: 5px; }
+      .mainHome .previewProductos .previewProductosContainer .buttonPreviewProductos {
+        margin: 150px 30px 100px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        /* button{
+                    margin: 5px 500px 5px 500px;
+                    color: $buttonColor;
+                    border-color: $buttonColor;
+                    border-radius: 20px;
+                    border-style: solid;
+                    padding: 15px;
+                    a{
+                        font-family: $fontFamily;
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-align: center;
+                        text-decoration: none;
+                        color: $paragraphColor;
+                        & :hover{
+                            font-weight: 600;
+                        }
+                    }
+                } */ }
+        .mainHome .previewProductos .previewProductosContainer .buttonPreviewProductos .btn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          margin: 0px 400px 0px 400px;
+          padding: 10px;
+          font-family: "Raleway", sans-serif;
+          color: black;
+          font-weight: 400;
+          font-size: 24px;
+          text-align: center;
+          background-color: #e5d1f0;
+          border-color: #e5d1f0;
+          border-radius: 7px;
+          border-style: solid;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); }
+          .mainHome .previewProductos .previewProductosContainer .buttonPreviewProductos .btn:hover {
+            font-weight: 600; }
+  .mainHome .previewContacto {
+    background-image: url(/Img/home_contacto.jpg);
+    background-size: cover; }
+    .mainHome .previewContacto .previewContactoContainer {
+      margin: 0px 20px 20px 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: "Raleway", sans-serif; }
+      .mainHome .previewContacto .previewContactoContainer .descriptionContactoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 150px 30px 50px 30px; }
+        .mainHome .previewContacto .previewContactoContainer .descriptionContactoContainer p {
+          margin: 5px 200px 5px 200px;
+          color: white;
+          font-size: 30px;
+          font-weight: 400;
+          text-transform: uppercase;
+          text-align: center;
+          letter-spacing: 5px; }
+      .mainHome .previewContacto .previewContactoContainer .buttonPreviewContacto {
+        /* margin: 40px 30px 100px 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                button{
+                    margin: 5px 500px 5px 500px;
+                    color: $buttonColor;
+                    border-color: $buttonColor;
+                    border-radius: 20px;
+                    border-style: solid;
+                    padding: 15px;
+                    a{
+                        font-family: $fontFamily;
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-align: center;
+                        text-decoration: none;
+                        color: $paragraphColor;
+                        & :hover{
+                            font-weight: 600;
+                        }
+                    }
+                } */
+        margin: 150px 30px 100px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; }
+        .mainHome .previewContacto .previewContactoContainer .buttonPreviewContacto .btn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          margin: 0px 400px 0px 400px;
+          padding: 10px;
+          font-family: "Raleway", sans-serif;
+          color: black;
+          font-weight: 400;
+          font-size: 24px;
+          text-align: center;
+          background-color: #e5d1f0;
+          border-color: #e5d1f0;
+          border-radius: 7px;
+          border-style: solid;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); }
+          .mainHome .previewContacto .previewContactoContainer .buttonPreviewContacto .btn:hover {
+            font-weight: 600; }
+
+.mainProductos {
+  background-color: white; }
+  .mainProductos .productosGeneral {
+    background-color: #d4edf2;
+    margin: 0; }
+    .mainProductos .productosGeneral .productosGeneralContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center; }
+      .mainProductos .productosGeneral .productosGeneralContainer h1 {
+        margin: 40px 0px 20px 0px;
+        padding: 10px;
+        font-family: "Raleway", sans-serif;
+        color: black;
+        font-weight: 600;
+        font-size: 48px;
+        font-style: normal;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      .mainProductos .productosGeneral .productosGeneralContainer p {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.53); }
+      .mainProductos .productosGeneral .productosGeneralContainer .imgProductosGeneral {
+        margin: 20px 0px 100px 0px;
+        padding: 0px 120px 0px 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; }
+        .mainProductos .productosGeneral .productosGeneralContainer .imgProductosGeneral img {
+          border: 1px solid #FFFFFF;
+          filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.2));
+          border-radius: 27px; }
+  .mainProductos .cremas {
+    background-color: rgba(212, 237, 242, 0.8);
+    margin: 0; }
+    .mainProductos .cremas .cremasContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-content: center;
+      /* card{
+                margin: $margenPadre;
+                padding: $paddingPadre;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                box-shadow: 0px 10px 340px 0px rgba(0, 0, 0, 0.2);
+                border-radius: 27px;
+            } */ }
+      .mainProductos .cremas .cremasContainer h2 {
+        margin: 30px 0px 15px 0px;
+        padding: 0;
+        font-family: "Raleway", sans-serif;
+        color: #15ADCE;
+        font-weight: 600;
+        font-size: 38px;
+        font-style: normal;
+        text-align: center;
+        letter-spacing: 0.15em; }
+      .mainProductos .cremas .cremasContainer .cardsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 10px 0px 40px 0px;
+        padding: 0px; }
+        .mainProductos .cremas .cremasContainer .cardsContainer .card {
+          padding: 10px;
+          border-radius: 20px; }
+          .mainProductos .cremas .cremasContainer .cardsContainer .card .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+            padding: 5px; }
+            .mainProductos .cremas .cremasContainer .cardsContainer .card .row .col-md-4 {
+              display: flex;
+              flex-direction: column;
+              justify-content: center; }
+              .mainProductos .cremas .cremasContainer .cardsContainer .card .row .col-md-4 img {
+                border-radius: 20px;
+                width: 300px;
+                height: 350px; }
+            .mainProductos .cremas .cremasContainer .cardsContainer .card .row .col-md-8 {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-content: center; }
+              .mainProductos .cremas .cremasContainer .cardsContainer .card .row .col-md-8 .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-content: center; }
+                .mainProductos .cremas .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .card-title {
+                  font-family: "Raleway", sans-serif;
+                  color: black;
+                  text-transform: uppercase;
+                  text-align: center;
+                  font-weight: 600;
+                  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+                .mainProductos .cremas .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .card-text {
+                  font-family: "Raleway", sans-serif;
+                  color: black;
+                  font-weight: 400;
+                  text-align: center; }
+                  .mainProductos .cremas .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .card-text .text-muted {
+                    font-size: 15px;
+                    font-weight: 600; }
+                .mainProductos .cremas .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .btn {
+                  margin: 0px 60px 0px 60px;
+                  font-family: "Raleway", sans-serif;
+                  color: black;
+                  font-weight: 400;
+                  text-align: center;
+                  background-color: #e5d1f0;
+                  border-color: #e5d1f0;
+                  border-radius: 20px;
+                  border-style: solid;
+                  padding: 5px 5px 5px 5px;
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+                  .mainProductos .cremas .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .btn:hover {
+                    font-weight: 600; }
+  .mainProductos .geles {
+    background-color: rgba(212, 237, 242, 0.6);
+    margin: 0; }
+    .mainProductos .geles .cremasContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-content: center;
+      /* card{
+                margin: $margenPadre;
+                padding: $paddingPadre;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                box-shadow: 0px 10px 340px 0px rgba(0, 0, 0, 0.2);
+                border-radius: 27px;
+            } */ }
+      .mainProductos .geles .cremasContainer h2 {
+        margin: 30px 0px 15px 0px;
+        padding: 0;
+        font-family: "Raleway", sans-serif;
+        color: #15ADCE;
+        font-weight: 600;
+        font-size: 38px;
+        font-style: normal;
+        text-align: center;
+        letter-spacing: 0.15em; }
+      .mainProductos .geles .cremasContainer .cardsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 10px 0px 40px 0px;
+        padding: 0px; }
+        .mainProductos .geles .cremasContainer .cardsContainer .card {
+          padding: 10px;
+          border-radius: 20px; }
+          .mainProductos .geles .cremasContainer .cardsContainer .card .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 5px; }
+            .mainProductos .geles .cremasContainer .cardsContainer .card .row .col-md-4 img {
+              border-radius: 20px;
+              width: 300px;
+              height: 250px; }
+            .mainProductos .geles .cremasContainer .cardsContainer .card .row .col-md-8 {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-content: center; }
+              .mainProductos .geles .cremasContainer .cardsContainer .card .row .col-md-8 .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-content: center; }
+                .mainProductos .geles .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .card-title {
+                  font-family: "Raleway", sans-serif;
+                  color: black;
+                  text-transform: uppercase;
+                  text-align: center;
+                  font-weight: 600;
+                  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+                .mainProductos .geles .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .card-text {
+                  font-family: "Raleway", sans-serif;
+                  color: black;
+                  font-weight: 400;
+                  text-align: center; }
+                  .mainProductos .geles .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .card-text .text-muted {
+                    font-size: 15px;
+                    font-weight: 600; }
+                .mainProductos .geles .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .btn {
+                  margin: 0px 60px 0px 60px;
+                  font-family: "Raleway", sans-serif;
+                  color: black;
+                  font-weight: 400;
+                  text-align: center;
+                  background-color: #e5d1f0;
+                  border-color: #e5d1f0;
+                  border-radius: 20px;
+                  border-style: solid;
+                  padding: 5px 5px 5px 5px;
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+                  .mainProductos .geles .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .btn:hover {
+                    font-weight: 600; }
+  .mainProductos .promociones {
+    background-color: rgba(212, 237, 242, 0.4);
+    margin: 0; }
+    .mainProductos .promociones .cremasContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-content: center;
+      /* card{
+                margin: $margenPadre;
+                padding: $paddingPadre;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                box-shadow: 0px 10px 340px 0px rgba(0, 0, 0, 0.2);
+                border-radius: 27px;
+            } */ }
+      .mainProductos .promociones .cremasContainer h2 {
+        margin: 30px 0px 15px 0px;
+        padding: 0;
+        font-family: "Raleway", sans-serif;
+        color: #15ADCE;
+        font-weight: 600;
+        font-size: 38px;
+        font-style: normal;
+        text-align: center;
+        letter-spacing: 0.15em; }
+      .mainProductos .promociones .cremasContainer .cardsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 10px 0px 40px 0px;
+        padding: 0px; }
+        .mainProductos .promociones .cremasContainer .cardsContainer .card {
+          padding: 10px;
+          border-radius: 20px; }
+          .mainProductos .promociones .cremasContainer .cardsContainer .card .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 5px; }
+            .mainProductos .promociones .cremasContainer .cardsContainer .card .row .col-md-4 img {
+              border-radius: 20px;
+              width: 300px;
+              height: 250px; }
+            .mainProductos .promociones .cremasContainer .cardsContainer .card .row .col-md-8 {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-content: center; }
+              .mainProductos .promociones .cremasContainer .cardsContainer .card .row .col-md-8 .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-content: center; }
+                .mainProductos .promociones .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .card-title {
+                  font-family: "Raleway", sans-serif;
+                  color: black;
+                  text-transform: uppercase;
+                  text-align: center;
+                  font-weight: 600;
+                  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+                .mainProductos .promociones .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .card-text {
+                  font-family: "Raleway", sans-serif;
+                  color: black;
+                  font-weight: 400;
+                  text-align: center; }
+                  .mainProductos .promociones .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .card-text .text-muted {
+                    font-size: 15px;
+                    font-weight: 600; }
+                .mainProductos .promociones .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .btn {
+                  margin: 0px 60px 0px 60px;
+                  font-family: "Raleway", sans-serif;
+                  color: black;
+                  font-weight: 400;
+                  text-align: center;
+                  background-color: #e5d1f0;
+                  border-color: #e5d1f0;
+                  border-radius: 20px;
+                  border-style: solid;
+                  padding: 5px 5px 5px 5px;
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+                  .mainProductos .promociones .cremasContainer .cardsContainer .card .row .col-md-8 .card-body .btn:hover {
+                    font-weight: 600; }
+  .mainProductos .aclaraciones {
+    background-color: rgba(212, 237, 242, 0.2);
+    margin: 0; }
+    .mainProductos .aclaraciones .aclaracionesContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 120px 10px 120px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .mainProductos .aclaraciones .aclaracionesContainer p {
+        font-family: "Raleway", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: black;
+        text-align: center; }
+
+.mainFaq {
+  background-color: white; }
+  .mainFaq .faqGeneral {
+    background-color: #f0d1ef;
+    margin: 0; }
+    .mainFaq .faqGeneral .faqGeneralContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center; }
+      .mainFaq .faqGeneral .faqGeneralContainer h1 {
+        margin: 40px 0px 20px 0px;
+        padding: 10px;
+        font-family: "Raleway", sans-serif;
+        color: black;
+        font-weight: 600;
+        font-size: 48px;
+        font-style: normal;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      .mainFaq .faqGeneral .faqGeneralContainer p {
+        margin: 20px 40px 30px 40px;
+        padding: 10px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.53); }
+  .mainFaq .faq1-2 {
+    background-color: rgba(240, 209, 239, 0.8);
+    margin: 0; }
+    .mainFaq .faq1-2 .faqContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .mainFaq .faq1-2 .faqContainer .faqArticle {
+        margin: 10px 50px 10px 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.7); }
+        .mainFaq .faq1-2 .faqContainer .faqArticle .faqArticleContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-family: "Raleway", sans-serif;
+          color: black;
+          font-weight: 400;
+          text-align: left;
+          margin: 5px;
+          padding: 5px; }
+          .mainFaq .faq1-2 .faqContainer .faqArticle .faqArticleContainer h3, .mainFaq .faq1-2 .faqContainer .faqArticle .faqArticleContainer p {
+            margin: 5px;
+            padding: 5px; }
+  .mainFaq .faq3-4 {
+    background-color: rgba(240, 209, 239, 0.6);
+    margin: 0; }
+    .mainFaq .faq3-4 .faqContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .mainFaq .faq3-4 .faqContainer .faqArticle {
+        margin: 10px 50px 10px 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.7); }
+        .mainFaq .faq3-4 .faqContainer .faqArticle .faqArticleContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-family: "Raleway", sans-serif;
+          color: black;
+          font-weight: 400;
+          text-align: left;
+          margin: 5px;
+          padding: 5px; }
+          .mainFaq .faq3-4 .faqContainer .faqArticle .faqArticleContainer h3, .mainFaq .faq3-4 .faqContainer .faqArticle .faqArticleContainer p {
+            margin: 5px;
+            padding: 5px; }
+  .mainFaq .faq5-6 {
+    background-color: rgba(240, 209, 239, 0.4);
+    margin: 0; }
+    .mainFaq .faq5-6 .faqContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .mainFaq .faq5-6 .faqContainer .faqArticle {
+        margin: 10px 50px 10px 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.7); }
+        .mainFaq .faq5-6 .faqContainer .faqArticle .faqArticleContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-family: "Raleway", sans-serif;
+          color: black;
+          font-weight: 400;
+          text-align: left;
+          margin: 5px;
+          padding: 5px; }
+          .mainFaq .faq5-6 .faqContainer .faqArticle .faqArticleContainer h3, .mainFaq .faq5-6 .faqContainer .faqArticle .faqArticleContainer h4, .mainFaq .faq5-6 .faqContainer .faqArticle .faqArticleContainer p {
+            margin: 5px;
+            padding: 5px; }
+  .mainFaq .faq7 {
+    background-color: rgba(240, 209, 239, 0.2);
+    margin: 0; }
+    .mainFaq .faq7 .faqContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .mainFaq .faq7 .faqContainer .faqArticle {
+        margin: 10px 50px 10px 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.7); }
+        .mainFaq .faq7 .faqContainer .faqArticle .faqArticleContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-family: "Raleway", sans-serif;
+          color: black;
+          font-weight: 400;
+          text-align: left;
+          margin: 5px;
+          padding: 5px; }
+          .mainFaq .faq7 .faqContainer .faqArticle .faqArticleContainer h3, .mainFaq .faq7 .faqContainer .faqArticle .faqArticleContainer ol {
+            margin: 5px;
+            padding: 5px; }
+
+.mainContacto {
+  background-color: white; }
+  .mainContacto .contactoGeneral {
+    background-color: #d4edf2;
+    margin: 0; }
+    .mainContacto .contactoGeneral .contactoGeneralContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center; }
+      .mainContacto .contactoGeneral .contactoGeneralContainer h1 {
+        margin: 40px 0px 20px 0px;
+        padding: 10px;
+        font-family: "Raleway", sans-serif;
+        color: black;
+        font-weight: 600;
+        font-size: 48px;
+        font-style: normal;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      .mainContacto .contactoGeneral .contactoGeneralContainer p {
+        margin: 20px 40px 30px 40px;
+        padding: 10px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.53); }
+  .mainContacto .contactoCliente {
+    background-color: rgba(212, 237, 242, 0.8);
+    margin: 0; }
+    .mainContacto .contactoCliente .contactoContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px; }
+      .mainContacto .contactoCliente .contactoContainer .contactoContainerCard {
+        margin: 40px 130px 40px 130px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        background-color: white;
+        border-radius: 71px;
+        filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.2)); }
+        .mainContacto .contactoCliente .contactoContainer .contactoContainerCard .contactoTitle {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 20px 50px 10px 50px;
+          padding: 10px; }
+          .mainContacto .contactoCliente .contactoContainer .contactoContainerCard .contactoTitle h2 {
+            font-family: "Raleway", sans-serif;
+            color: black;
+            font-weight: 600;
+            font-size: 32px;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+        .mainContacto .contactoCliente .contactoContainer .contactoContainerCard .contactoDescr {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin: 10px 50px 20px 50px;
+          padding: 10px; }
+          .mainContacto .contactoCliente .contactoContainer .contactoContainerCard .contactoDescr p {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0px 30px 0px 0px;
+            font-family: "Raleway", sans-serif;
+            color: black;
+            font-weight: 400;
+            font-size: 20px;
+            text-align: left; }
+          .mainContacto .contactoCliente .contactoContainer .contactoContainerCard .contactoDescr .contactoIcons {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 0px 0px 0px 30px; }
+            .mainContacto .contactoCliente .contactoContainer .contactoContainerCard .contactoDescr .contactoIcons a {
+              display: flex;
+              flex-direction: row;
+              font-family: "Raleway", sans-serif;
+              text-decoration: none;
+              font-weight: 400;
+              font-size: 20px;
+              color: black; }
+              .mainContacto .contactoCliente .contactoContainer .contactoContainerCard .contactoDescr .contactoIcons a:hover {
+                font-weight: 600; }
+              .mainContacto .contactoCliente .contactoContainer .contactoContainerCard .contactoDescr .contactoIcons a svg {
+                margin-right: 5px; }
+  .mainContacto .contactoRedes {
+    background-color: rgba(212, 237, 242, 0.6);
+    margin: 0; }
+    .mainContacto .contactoRedes .contactoContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px; }
+      .mainContacto .contactoRedes .contactoContainer .contactoContainerCard {
+        margin: 40px 130px 40px 130px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        background-color: white;
+        border-radius: 71px;
+        filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.2)); }
+        .mainContacto .contactoRedes .contactoContainer .contactoContainerCard .contactoTitle {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 20px 50px 10px 50px;
+          padding: 10px; }
+          .mainContacto .contactoRedes .contactoContainer .contactoContainerCard .contactoTitle h2 {
+            font-family: "Raleway", sans-serif;
+            color: black;
+            font-weight: 600;
+            font-size: 32px;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+        .mainContacto .contactoRedes .contactoContainer .contactoContainerCard .contactoDescr {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin: 10px 50px 20px 50px;
+          padding: 10px; }
+          .mainContacto .contactoRedes .contactoContainer .contactoContainerCard .contactoDescr p {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0px 30px 0px 0px;
+            font-family: "Raleway", sans-serif;
+            color: black;
+            font-weight: 400;
+            font-size: 20px;
+            text-align: left; }
+          .mainContacto .contactoRedes .contactoContainer .contactoContainerCard .contactoDescr .contactoIcons {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 0px 0px 0px 30px; }
+            .mainContacto .contactoRedes .contactoContainer .contactoContainerCard .contactoDescr .contactoIcons a {
+              display: flex;
+              flex-direction: row;
+              font-family: "Raleway", sans-serif;
+              text-decoration: none;
+              font-weight: 400;
+              font-size: 20px;
+              color: black; }
+              .mainContacto .contactoRedes .contactoContainer .contactoContainerCard .contactoDescr .contactoIcons a:hover {
+                font-weight: 600; }
+              .mainContacto .contactoRedes .contactoContainer .contactoContainerCard .contactoDescr .contactoIcons a svg {
+                margin-right: 5px; }
+  .mainContacto .contactoNewsletter {
+    background-color: rgba(212, 237, 242, 0.4);
+    margin: 0; }
+    .mainContacto .contactoNewsletter .contactoContainer {
+      margin: 0px 20px 0px 20px;
+      padding: 10px; }
+      .mainContacto .contactoNewsletter .contactoContainer .contactoContainerCard {
+        margin: 40px 130px 40px 130px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        background-color: white;
+        border-radius: 71px;
+        filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.2)); }
+        .mainContacto .contactoNewsletter .contactoContainer .contactoContainerCard .contactoTitle {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 20px 50px 10px 50px;
+          padding: 10px; }
+          .mainContacto .contactoNewsletter .contactoContainer .contactoContainerCard .contactoTitle h2 {
+            font-family: "Raleway", sans-serif;
+            color: black;
+            font-weight: 600;
+            font-size: 32px;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+        .mainContacto .contactoNewsletter .contactoContainer .contactoContainerCard .contactoDescr {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin: 10px 50px 20px 50px;
+          padding: 10px;
+          /* .newsletterInput{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin: 0px 0px 0px 30px;
+                        border: 1px solid black;
+                        font-family: $fontFamily;
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-align: center;
+                        input{
+                            border-radius: 71px;
+                        }
+                        button{
+                            color: $buttonColor;
+                            border-radius: 71px;
+                            &:hover{
+                                font-weight: 600;
+                            }
+                        }
+                    } */
+          /* .input-group{
+                        justify-content: center;
+                        margin: 0px 0px 0px 30px;
+                        border: 1px solid black;
+                    } */ }
+          .mainContacto .contactoNewsletter .contactoContainer .contactoContainerCard .contactoDescr p {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: left;
+            margin: 0px 10px 0px 0px;
+            padding: 0px 70px 0px 0px;
+            font-family: "Raleway", sans-serif;
+            color: black;
+            font-weight: 400;
+            font-size: 20px;
+            text-align: left; }
+          .mainContacto .contactoNewsletter .contactoContainer .contactoContainerCard .contactoDescr .newsletterInput {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            margin: 0px 0px 0px 10px;
+            font-family: "Raleway", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center; }
+            .mainContacto .contactoNewsletter .contactoContainer .contactoContainerCard .contactoDescr .newsletterInput .input-group {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              width: max-content; }
+
+footer {
+  background-color: white; }
+  footer .contenedorPadreFooter {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    footer .contenedorPadreFooter .logoFooter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      animation-duration: 10s; }
+      footer .contenedorPadreFooter .logoFooter a {
+        align-self: center; }
+        footer .contenedorPadreFooter .logoFooter a img {
+          align-self: center; }
+    footer .contenedorPadreFooter .linksFooter {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      footer .contenedorPadreFooter .linksFooter .linksPorriStyle {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; }
+        footer .contenedorPadreFooter .linksFooter .linksPorriStyle p {
+          font-family: "Raleway", sans-serif;
+          font-size: 15px;
+          color: black;
+          text-align: center;
+          padding: 10px;
+          margin-bottom: 0; }
+          footer .contenedorPadreFooter .linksFooter .linksPorriStyle p a {
+            text-decoration: none;
+            color: black; }
+        footer .contenedorPadreFooter .linksFooter .linksPorriStyle .buttonsNav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          padding: 10px; }
+          footer .contenedorPadreFooter .linksFooter .linksPorriStyle .buttonsNav a {
+            color: black; }
+      footer .contenedorPadreFooter .linksFooter .linksDeveloper {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+        footer .contenedorPadreFooter .linksFooter .linksDeveloper p {
+          font-family: "Raleway", sans-serif;
+          color: black;
+          font-size: 15px;
+          text-align: center;
+          margin-bottom: 0; }
+          footer .contenedorPadreFooter .linksFooter .linksDeveloper p a {
+            text-decoration: none;
+            font-weight: 600;
+            color: black; }
+
+/*RESETEO CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*MÁRGENES BODY*/
+body {
+  /* margin: 10px;
+    padding: 10px; */
+  background-color: white; }

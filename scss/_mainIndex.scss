@@ -1,0 +1,237 @@
+.mainHome{
+    background-color: white;
+    .aboutMe{
+        background-color: $sectionLila100;
+        margin: 0;
+        .aboutMeContainer{
+            margin: 0px 20px 0px 20px;
+            padding: $paddingPadre;
+            height: 100%;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 40px;
+            grid-template-areas: 
+            "imgGiaContainer descriptionGia";
+            justify-content: center;
+            align-content: stretch;
+            justify-items: stretch;
+            align-items: center;
+            .imgGiaContainer{
+                padding: 20px;
+                grid-area: imgGiaContainer;
+                height: 100%;
+                display: grid;
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 10px;
+                grid-template-areas: 
+                "imgBefore . ."
+                "imgBefore imgAfter1 ."
+                ". imgAfter1 imgAfter2"
+                ". . imgAfter2";
+                justify-content: center;
+                align-content: stretch;
+                align-items: stretch;
+                .imgBefore{
+                    grid-area: imgBefore;
+                    justify-self: center;
+                    img{
+                        box-shadow: 0px 10px 340px 0px rgba(0, 0, 0, 0.2);
+                        border-radius: 27px;
+                    }
+                }
+                .imgAfter1{
+                    grid-area: imgAfter1;
+                    justify-self: center;
+                    img{
+                        box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.2);
+                        border-radius: 27px;
+                    }
+                }
+                .imgAfter2{
+                    grid-area: imgAfter2;
+                    justify-self: center;
+                    img{
+                        box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.2);
+                        border-radius: 27px;
+                    }
+                }
+            }
+            .descriptionGia{
+                height: 100%;
+                padding: 20px;
+                grid-area: descriptionGia;
+                align-content: center;
+                font-family: $fontFamily;
+                text-align: center;
+                h2{
+                    color: $titleColor;
+                    font-weight: 600;
+                    
+                    letter-spacing: 7px;
+                    margin: 10px 0px 40px 0px;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: $paragraphColor;
+                    line-height: 30px;
+                    margin: 20px 0px 20px 0px;
+                }
+            }
+        }
+    }
+    .previewProductos{
+        background-image: url(/Img/home_productos_cut.jpg);
+        background-size: cover;
+        .previewProductosContainer{
+            margin: 0px 20px 0px 20px;
+            padding: $paddingPadre;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: $fontFamily;
+            .descriptionProductosContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 150px 30px 50px 30px;
+                p{
+                    margin: 5px 200px 5px 200px;
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    text-align: center;
+                    letter-spacing: 5px;
+                }
+            }
+            .buttonPreviewProductos{
+                margin: 150px 30px 100px 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                .btn{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    margin: 0px 400px 0px 400px;
+                    padding: $paddingPadre;
+                    font-family: $fontFamily;
+                    color: $paragraphColor;
+                    font-weight: 400;
+                    font-size: 24px;
+                    text-align: center;
+                    background-color: $buttonColor;
+                    border-color: $buttonColor;
+                    border-radius: 7px;
+                    border-style: solid;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+                    &:hover{
+                        font-weight: 600;
+                    }
+                }
+                /* button{
+                    margin: 5px 500px 5px 500px;
+                    color: $buttonColor;
+                    border-color: $buttonColor;
+                    border-radius: 20px;
+                    border-style: solid;
+                    padding: 15px;
+                    a{
+                        font-family: $fontFamily;
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-align: center;
+                        text-decoration: none;
+                        color: $paragraphColor;
+                        & :hover{
+                            font-weight: 600;
+                        }
+                    }
+                } */
+            }
+        }
+    }
+    .previewContacto{
+        background-image: url(/Img/home_contacto.jpg);
+        background-size: cover;
+        .previewContactoContainer{
+            margin: 0px 20px 20px 20px;
+            padding: $paddingPadre;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: $fontFamily;
+            .descriptionContactoContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 150px 30px 50px 30px;
+                p{
+                    margin: 5px 200px 5px 200px;
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    text-align: center;
+                    letter-spacing: 5px;
+                }
+            }
+            .buttonPreviewContacto{
+                /* margin: 40px 30px 100px 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                button{
+                    margin: 5px 500px 5px 500px;
+                    color: $buttonColor;
+                    border-color: $buttonColor;
+                    border-radius: 20px;
+                    border-style: solid;
+                    padding: 15px;
+                    a{
+                        font-family: $fontFamily;
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-align: center;
+                        text-decoration: none;
+                        color: $paragraphColor;
+                        & :hover{
+                            font-weight: 600;
+                        }
+                    }
+                } */
+                margin: 150px 30px 100px 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                .btn{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    margin: 0px 400px 0px 400px;
+                    padding: $paddingPadre;
+                    font-family: $fontFamily;
+                    color: $paragraphColor;
+                    font-weight: 400;
+                    font-size: 24px;
+                    text-align: center;
+                    background-color: $buttonColor;
+                    border-color: $buttonColor;
+                    border-radius: 7px;
+                    border-style: solid;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+                    &:hover{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
