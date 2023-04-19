@@ -71,7 +71,6 @@
                     justify-content: space-around;
                     margin: 10px 50px 20px 50px;
                     padding: $paddingPadre;
-                    // border: 2px solid green;
                     p{
                         display: flex;
                         flex-direction: row;
@@ -82,14 +81,12 @@
                         font-weight: 400;
                         font-size: 20px;
                         text-align: left;
-                        // border: 1px solid black;
                     }
                     .contactoIcons{
                         display: flex;
                         flex-direction: column;
                         justify-content: space-evenly;
                         margin: 0px 0px 0px 30px;
-                        // border: 1px solid black;
                         a{
                             display: flex;
                             flex-direction: row;
@@ -132,7 +129,6 @@
                     justify-content: center;
                     margin: 20px 50px 10px 50px;
                     padding: $paddingPadre;
-                    // border: 2px solid green;
                     h2{
                         font-family: $fontFamily;
                         color: $titleColor;
@@ -140,7 +136,6 @@
                         font-size: 32px;
                         text-align: center;
                         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                        // border: 1px solid black;
                     }
                 }
                 .contactoDescr{
@@ -149,7 +144,6 @@
                     justify-content: space-around;
                     margin: 10px 50px 20px 50px;
                     padding: $paddingPadre;
-                    // border: 2px solid green;
                     p{
                         display: flex;
                         flex-direction: row;
@@ -160,14 +154,12 @@
                         font-weight: 400;
                         font-size: 20px;
                         text-align: left;
-                        // border: 1px solid black;
                     }
                     .contactoIcons{
                         display: flex;
                         flex-direction: column;
                         justify-content: space-evenly;
                         margin: 0px 0px 0px 30px;
-                        // border: 1px solid black;
                         a{
                             display: flex;
                             flex-direction: row;
@@ -210,7 +202,6 @@
                     justify-content: center;
                     margin: 20px 50px 10px 50px;
                     padding: $paddingPadre;
-                    // border: 2px solid green;
                     h2{
                         font-family: $fontFamily;
                         color: $titleColor;
@@ -218,7 +209,6 @@
                         font-size: 32px;
                         text-align: center;
                         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                        // border: 1px solid black;
                     }
                 }
                 .contactoDescr{
@@ -227,7 +217,6 @@
                     justify-content: space-around;
                     margin: 10px 50px 20px 50px;
                     padding: $paddingPadre;
-                    // border: 2px solid green;
                     p{
                         display: flex;
                         flex-direction: row;
@@ -240,15 +229,12 @@
                         font-weight: 400;
                         font-size: 20px;
                         text-align: left;
-                        // border: 1px solid black;
                     }
                     .newsletterInput{
                         display: flex;
                         flex-direction: row;
                         justify-content: right;
                         margin: 0px 0px 0px 10px;
-                        // padding: $paddingPadre;
-                        // border: 1px solid black;
                         font-family: $fontFamily;
                         font-size: 20px;
                         font-weight: 400;
@@ -260,32 +246,6 @@
                             width: max-content;
                         }
                     }
-                    /* .newsletterInput{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        margin: 0px 0px 0px 30px;
-                        border: 1px solid black;
-                        font-family: $fontFamily;
-                        font-size: 20px;
-                        font-weight: 400;
-                        text-align: center;
-                        input{
-                            border-radius: 71px;
-                        }
-                        button{
-                            color: $buttonColor;
-                            border-radius: 71px;
-                            &:hover{
-                                font-weight: 600;
-                            }
-                        }
-                    } */
-                    /* .input-group{
-                        justify-content: center;
-                        margin: 0px 0px 0px 30px;
-                        border: 1px solid black;
-                    } */
                 }
             }
         }

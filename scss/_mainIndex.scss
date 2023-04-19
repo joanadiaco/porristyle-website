@@ -76,12 +76,11 @@
                 h2{
                     color: $titleColor;
                     font-weight: 600;
-                    
                     letter-spacing: 7px;
                     margin: 10px 0px 40px 0px;
                 }
                 p{
-                    font-size: 15px;
+                    font-size: 20px;
                     font-weight: 400;
                     color: $paragraphColor;
                     line-height: 30px;
@@ -142,25 +141,6 @@
                         font-weight: 600;
                     }
                 }
-                /* button{
-                    margin: 5px 500px 5px 500px;
-                    color: $buttonColor;
-                    border-color: $buttonColor;
-                    border-radius: 20px;
-                    border-style: solid;
-                    padding: 15px;
-                    a{
-                        font-family: $fontFamily;
-                        font-size: 20px;
-                        font-weight: 400;
-                        text-align: center;
-                        text-decoration: none;
-                        color: $paragraphColor;
-                        & :hover{
-                            font-weight: 600;
-                        }
-                    }
-                } */
             }
         }
     }
@@ -190,29 +170,6 @@
                 }
             }
             .buttonPreviewContacto{
-                /* margin: 40px 30px 100px 30px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                button{
-                    margin: 5px 500px 5px 500px;
-                    color: $buttonColor;
-                    border-color: $buttonColor;
-                    border-radius: 20px;
-                    border-style: solid;
-                    padding: 15px;
-                    a{
-                        font-family: $fontFamily;
-                        font-size: 20px;
-                        font-weight: 400;
-                        text-align: center;
-                        text-decoration: none;
-                        color: $paragraphColor;
-                        & :hover{
-                            font-weight: 600;
-                        }
-                    }
-                } */
                 margin: 150px 30px 100px 30px;
                 display: flex;
                 flex-direction: column;

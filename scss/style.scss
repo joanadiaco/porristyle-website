@@ -44,5 +44,460 @@ body{
 /*DESIGN RESPONSIVE*/
 /*ADAPTACIÓN A TABLET*/
 @media only screen and (min-width: 768px) and (max-width: 1023px){
-    
+    .mainHome{
+        .aboutMe{
+            .aboutMeContainer{
+                display: flex;
+                flex-direction:column-reverse;
+                .imgGiaContainer{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    .carousel{
+                        width: 75%;
+                    }
+                }
+            }
+        }
+        .previewProductos{
+            background-size: cover;
+            .previewProductosContainer{
+                .descriptionProductosContainer{
+                    p{
+                        margin: 5px 100px 5px 100px;
+                    }
+                }
+                .buttonPreviewProductos{
+                    .btn{
+                        margin: 0px 100px 0px 100px;
+                    }
+                }
+            }
+        }
+        .previewContacto{
+            background-size: cover;
+            .previewContactoContainer{
+                .descriptionContactoContainer{
+                    p{
+                        margin: 5px 100px 5px 100px;
+                    }
+                }
+                .buttonPreviewContacto{
+                    .btn{
+                        margin: 0px 100px 0px 100px;
+                    }
+                }
+            }
+        }
+    }
+    .mainProductos{
+        .productosGeneral{
+            .productosGeneralContainer{
+                .imgProductosGeneral{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    img{
+                        margin: 0px 5px 0px 5px;
+                    }
+                }
+            }
+        }
+    }
+    .mainFaq{
+        .faq1-2{
+            .faqContainer{
+                .faqArticle{
+                    .faqArticleContainer{
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .faq3-4{
+            .faqContainer{
+                .faqArticle{
+                    .faqArticleContainer{
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .faq5-6{
+            .faqContainer{
+                .faqArticle{
+                    .faqArticleContainer{
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .faq7{
+            .faqContainer{
+                .faqArticle{
+                    .faqArticleContainer{
+                        ol{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainContacto{
+        .contactoCliente{
+            .contactoContainer{
+                .contactoContainerCard{
+                    margin: 40px 30px 40px 30px;
+                    .contactoTitle{
+                        margin: 20px 20px 5px 20px;
+                    }
+                    .contactoDescr{
+                        margin: 5px 20px 5px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        p{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            margin: 0px 20px 0px 20px;
+                            padding: 10px 20px 10px 20px;
+                            text-align: center;
+                        }
+                        .contactoIcons{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-evenly;
+                            margin: 10px 0px 10px 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .contactoRedes{
+            .contactoContainer{
+                .contactoContainerCard{
+                    margin: 40px 30px 40px 30px;
+                    .contactoTitle{
+                        margin: 20px 20px 5px 20px;
+                    }
+                    .contactoDescr{
+                        margin: 5px 20px 5px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        p{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            margin: 0px 20px 0px 20px;
+                            padding: 10px 20px 10px 20px;
+                            text-align: center;
+                        }
+                        .contactoIcons{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-evenly;
+                            margin: 10px 0px 10px 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .contactoNewsletter{
+            .contactoContainer{
+                .contactoContainerCard{
+                    margin: 40px 30px 40px 30px;
+                    .contactoTitle{
+                        margin: 20px 20px 5px 20px;
+                    }
+                    .contactoDescr{
+                        margin: 5px 20px 5px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        p{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            margin: 0px 20px 0px 20px;
+                            padding: 10px 20px 10px 20px;
+                            text-align: center;
+                        }
+                        .newsletterInput{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            margin: 10px 20px 10px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*ADAPTACIÓN A MOBILE*/
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .mainHome{
+        .aboutMe{
+            .aboutMeContainer{
+                display: flex;
+                flex-direction:column-reverse;
+                .imgGiaContainer{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    .carousel{
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .previewProductos{
+            background-size: cover;
+            .previewProductosContainer{
+                .descriptionProductosContainer{
+                    margin: 100px 30px 55px 30px;
+                    p{
+                        margin: 5px 50px 5px 50px;
+                    }
+                }
+                .buttonPreviewProductos{
+                    margin: 55px 30px 100px 30px;
+                    .btn{
+                        margin: 0px 50px 0px 50px;
+                    }
+                }
+            }
+        }
+        .previewContacto{
+            background-size: cover;
+            .previewContactoContainer{
+                .descriptionContactoContainer{
+                    margin: 70px 30px 55px 30px;
+                    p{
+                        margin: 5px 50px 5px 50px;
+                    }
+                }
+                .buttonPreviewContacto{
+                    margin: 55px 30px 70px 30px;
+                    .btn{
+                        margin: 0px 50px 0px 50px;
+                    }
+                }
+            }
+        }
+    }
+    .mainProductos{
+        .productosGeneral{
+            .productosGeneralContainer{
+                .imgProductosGeneral{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    img{
+                        margin: 5px 5px 5px 5px;
+                    }
+                }
+            }
+        }
+        .cremas{
+            .cremasContainer{
+                .cardsContainer{
+                    .card{
+                        .row{
+                            .col-md-4{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .geles{
+            .cremasContainer{
+                .cardsContainer{
+                    .card{
+                        .row{
+                            .col-md-4{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .promociones{
+            .cremasContainer{
+                .cardsContainer{
+                    .card{
+                        .row{
+                            .col-md-4{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainFaq{
+        .faq1-2{
+            .faqContainer{
+                .faqArticle{
+                    .faqArticleContainer{
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .faq3-4{
+            .faqContainer{
+                .faqArticle{
+                    .faqArticleContainer{
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .faq5-6{
+            .faqContainer{
+                .faqArticle{
+                    .faqArticleContainer{
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .faq7{
+            .faqContainer{
+                .faqArticle{
+                    .faqArticleContainer{
+                        ol{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainContacto{
+        .contactoCliente{
+            .contactoContainer{
+                .contactoContainerCard{
+                    margin: 40px 30px 40px 30px;
+                    .contactoTitle{
+                        margin: 20px 20px 5px 20px;
+                    }
+                    .contactoDescr{
+                        margin: 5px 20px 5px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        p{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            margin: 10px 10px 10px 10px;
+                            text-align: center;
+                        }
+                        .contactoIcons{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-self: center;
+                            margin: 0px 10px 0px 10px;
+                            a{
+                                margin: 10px 0px 10px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contactoRedes{
+            .contactoContainer{
+                .contactoContainerCard{
+                    margin: 40px 30px 40px 30px;
+                    .contactoTitle{
+                        margin: 20px 20px 5px 20px;
+                    }
+                    .contactoDescr{
+                        margin: 5px 20px 5px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        p{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            margin: 10px 10px 10px 10px;
+                            text-align: center;
+                        }
+                        .contactoIcons{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-self: center;
+                            margin: 0px 10px 0px 10px;
+                            a{
+                                margin: 10px 0px 10px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contactoNewsletter{
+            .contactoContainer{
+                .contactoContainerCard{
+                    margin: 40px 30px 40px 30px;
+                    .contactoTitle{
+                        margin: 20px 20px 5px 20px;
+                    }
+                    .contactoDescr{
+                        margin: 5px 20px 5px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        p{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            margin: 10px 10px 10px 10px;
+                            padding: 0px 0px 0px 0px;
+                            text-align: center;
+                        }
+                        .newsletterInput{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            margin: 10px 10px 10px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
