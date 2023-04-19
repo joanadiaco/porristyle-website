@@ -36,8 +36,6 @@ $paddingPadre: 10px;
 
 /*MÁRGENES BODY*/
 body{
-    /* margin: 10px;
-    padding: 10px; */
     background-color: white;
 }
 
@@ -282,13 +280,13 @@ body{
             background-size: cover;
             .previewContactoContainer{
                 .descriptionContactoContainer{
-                    margin: 70px 30px 55px 30px;
+                    margin: 100px 30px 55px 30px;
                     p{
                         margin: 5px 50px 5px 50px;
                     }
                 }
                 .buttonPreviewContacto{
-                    margin: 55px 30px 70px 30px;
+                    margin: 55px 30px 100px 30px;
                     .btn{
                         margin: 0px 50px 0px 50px;
                     }
@@ -357,9 +355,17 @@ body{
         }
     }
     .mainFaq{
+        .faqGeneral{
+            .faqGeneralContainer{
+                p{
+                    margin: 20px 30px 30px 30px;
+                }
+            }
+        }
         .faq1-2{
             .faqContainer{
                 .faqArticle{
+                    margin: 10px 25px 10px 25px;
                     .faqArticleContainer{
                         p{
                             font-size: 20px;
@@ -371,6 +377,7 @@ body{
         .faq3-4{
             .faqContainer{
                 .faqArticle{
+                    margin: 10px 25px 10px 25px;
                     .faqArticleContainer{
                         p{
                             font-size: 20px;
@@ -382,6 +389,7 @@ body{
         .faq5-6{
             .faqContainer{
                 .faqArticle{
+                    margin: 10px 25px 10px 25px;
                     .faqArticleContainer{
                         p{
                             font-size: 20px;
@@ -393,6 +401,7 @@ body{
         .faq7{
             .faqContainer{
                 .faqArticle{
+                    margin: 10px 25px 10px 25px;
                     .faqArticleContainer{
                         ol{
                             font-size: 20px;

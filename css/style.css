@@ -59,63 +59,13 @@ header {
       padding: 10px;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      /* display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 40px;
-            grid-template-areas: 
-            "imgGiaContainer descriptionGia";
-            justify-content: center;
-            align-content: stretch;
-            justify-items: stretch;
-            align-items: center; */ }
+      justify-content: space-between; }
       .mainHome .aboutMe .aboutMeContainer .imgGiaContainer {
-        padding: 20px;
-        /* grid-area: imgGiaContainer;
-                height: 100%;
-                display: grid;
-                grid-template-rows: repeat(4, 1fr);
-                grid-template-columns: repeat(3, 1fr);
-                column-gap: 10px;
-                grid-template-areas: 
-                "imgBefore . ."
-                "imgBefore imgAfter1 ."
-                ". imgAfter1 imgAfter2"
-                ". . imgAfter2";
-                justify-content: center;
-                align-content: stretch;
-                align-items: stretch;
-                .imgBefore{
-                    grid-area: imgBefore;
-                    justify-self: center;
-                    img{
-                        box-shadow: 0px 10px 340px 0px rgba(0, 0, 0, 0.2);
-                        border-radius: 27px;
-                    }
-                }
-                .imgAfter1{
-                    grid-area: imgAfter1;
-                    justify-self: center;
-                    img{
-                        box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.2);
-                        border-radius: 27px;
-                    }
-                }
-                .imgAfter2{
-                    grid-area: imgAfter2;
-                    justify-self: center;
-                    img{
-                        box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.2);
-                        border-radius: 27px;
-                    } 
-                }*/ }
+        padding: 20px; }
         .mainHome .aboutMe .aboutMeContainer .imgGiaContainer .carousel h5 {
           font-family: "Raleway", sans-serif; }
       .mainHome .aboutMe .aboutMeContainer .descriptionGia {
         padding: 20px;
-        /* grid-area: descriptionGia;
-                align-content: center; */
         font-family: "Raleway", sans-serif;
         text-align: center; }
         .mainHome .aboutMe .aboutMeContainer .descriptionGia h2 {
@@ -578,7 +528,11 @@ header {
           text-align: left;
           margin: 5px;
           padding: 5px; }
-          .mainFaq .faq1-2 .faqContainer .faqArticle .faqArticleContainer h3, .mainFaq .faq1-2 .faqContainer .faqArticle .faqArticleContainer p {
+          .mainFaq .faq1-2 .faqContainer .faqArticle .faqArticleContainer h3 {
+            margin: 5px;
+            padding: 5px;
+            font-weight: 600; }
+          .mainFaq .faq1-2 .faqContainer .faqArticle .faqArticleContainer p {
             margin: 5px;
             padding: 5px; }
   .mainFaq .faq3-4 {
@@ -607,7 +561,11 @@ header {
           text-align: left;
           margin: 5px;
           padding: 5px; }
-          .mainFaq .faq3-4 .faqContainer .faqArticle .faqArticleContainer h3, .mainFaq .faq3-4 .faqContainer .faqArticle .faqArticleContainer p {
+          .mainFaq .faq3-4 .faqContainer .faqArticle .faqArticleContainer h3 {
+            margin: 5px;
+            padding: 5px;
+            font-weight: 600; }
+          .mainFaq .faq3-4 .faqContainer .faqArticle .faqArticleContainer p {
             margin: 5px;
             padding: 5px; }
   .mainFaq .faq5-6 {
@@ -636,7 +594,15 @@ header {
           text-align: left;
           margin: 5px;
           padding: 5px; }
-          .mainFaq .faq5-6 .faqContainer .faqArticle .faqArticleContainer h3, .mainFaq .faq5-6 .faqContainer .faqArticle .faqArticleContainer h4, .mainFaq .faq5-6 .faqContainer .faqArticle .faqArticleContainer p {
+          .mainFaq .faq5-6 .faqContainer .faqArticle .faqArticleContainer h3 {
+            margin: 5px;
+            padding: 5px;
+            font-weight: 600; }
+          .mainFaq .faq5-6 .faqContainer .faqArticle .faqArticleContainer h4 {
+            margin: 5px;
+            padding: 5px;
+            font-style: italic; }
+          .mainFaq .faq5-6 .faqContainer .faqArticle .faqArticleContainer p {
             margin: 5px;
             padding: 5px; }
   .mainFaq .faq7 {
@@ -665,7 +631,11 @@ header {
           text-align: left;
           margin: 5px;
           padding: 5px; }
-          .mainFaq .faq7 .faqContainer .faqArticle .faqArticleContainer h3, .mainFaq .faq7 .faqContainer .faqArticle .faqArticleContainer ol {
+          .mainFaq .faq7 .faqContainer .faqArticle .faqArticleContainer h3 {
+            margin: 5px;
+            padding: 5px;
+            font-weight: 600; }
+          .mainFaq .faq7 .faqContainer .faqArticle .faqArticleContainer ol {
             margin: 5px;
             padding: 5px; }
 
@@ -953,8 +923,6 @@ footer {
 
 /*MÁRGENES BODY*/
 body {
-  /* margin: 10px;
-    padding: 10px; */
   background-color: white; }
 
 /*DESIGN RESPONSIVE*/
@@ -1083,11 +1051,11 @@ body {
   .mainHome .previewContacto {
     background-size: cover; }
     .mainHome .previewContacto .previewContactoContainer .descriptionContactoContainer {
-      margin: 70px 30px 55px 30px; }
+      margin: 100px 30px 55px 30px; }
       .mainHome .previewContacto .previewContactoContainer .descriptionContactoContainer p {
         margin: 5px 50px 5px 50px; }
     .mainHome .previewContacto .previewContactoContainer .buttonPreviewContacto {
-      margin: 55px 30px 70px 30px; }
+      margin: 55px 30px 100px 30px; }
       .mainHome .previewContacto .previewContactoContainer .buttonPreviewContacto .btn {
         margin: 0px 50px 0px 50px; }
   .mainProductos .productosGeneral .productosGeneralContainer .imgProductosGeneral {
@@ -1109,14 +1077,24 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center; }
-  .mainFaq .faq1-2 .faqContainer .faqArticle .faqArticleContainer p {
-    font-size: 20px; }
-  .mainFaq .faq3-4 .faqContainer .faqArticle .faqArticleContainer p {
-    font-size: 20px; }
-  .mainFaq .faq5-6 .faqContainer .faqArticle .faqArticleContainer p {
-    font-size: 20px; }
-  .mainFaq .faq7 .faqContainer .faqArticle .faqArticleContainer ol {
-    font-size: 20px; }
+  .mainFaq .faqGeneral .faqGeneralContainer p {
+    margin: 20px 30px 30px 30px; }
+  .mainFaq .faq1-2 .faqContainer .faqArticle {
+    margin: 10px 25px 10px 25px; }
+    .mainFaq .faq1-2 .faqContainer .faqArticle .faqArticleContainer p {
+      font-size: 20px; }
+  .mainFaq .faq3-4 .faqContainer .faqArticle {
+    margin: 10px 25px 10px 25px; }
+    .mainFaq .faq3-4 .faqContainer .faqArticle .faqArticleContainer p {
+      font-size: 20px; }
+  .mainFaq .faq5-6 .faqContainer .faqArticle {
+    margin: 10px 25px 10px 25px; }
+    .mainFaq .faq5-6 .faqContainer .faqArticle .faqArticleContainer p {
+      font-size: 20px; }
+  .mainFaq .faq7 .faqContainer .faqArticle {
+    margin: 10px 25px 10px 25px; }
+    .mainFaq .faq7 .faqContainer .faqArticle .faqArticleContainer ol {
+      font-size: 20px; }
   .mainContacto .contactoCliente .contactoContainer .contactoContainerCard {
     margin: 40px 30px 40px 30px; }
     .mainContacto .contactoCliente .contactoContainer .contactoContainerCard .contactoTitle {
