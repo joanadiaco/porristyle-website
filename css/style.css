@@ -80,7 +80,7 @@ header {
           line-height: 30px;
           margin: 20px 0px 20px 0px; }
   .mainHome .previewProductos {
-    background-image: url("/Img/home_productos_cut.jpg");
+    background-image: url("../img/home_productos_cut.jpg");
     background-size: cover; }
     .mainHome .previewProductos .previewProductosContainer {
       margin: 0px 20px 0px 20px;
@@ -128,7 +128,7 @@ header {
           .mainHome .previewProductos .previewProductosContainer .buttonPreviewProductos .btn:hover {
             font-weight: 600; }
   .mainHome .previewContacto {
-    background-image: url("/Img/home_contacto.jpg");
+    background-image: url("../img/home_contacto.jpg");
     background-size: cover; }
     .mainHome .previewContacto .previewContactoContainer {
       margin: 0px 20px 20px 20px;
